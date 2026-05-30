@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gallery</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body data-page="gallery">
+  <button class="music-toggle" type="button" aria-label="Toggle music" data-music-toggle>
+    <span data-music-icon>♪</span>
+  </button>
+
+  <main class="content-page blush-bg">
+    <section class="page-heading reveal">
+      <p class="eyebrow">Chapter two</p>
+      <h1>A Gallery Of You</h1>
+      <p>Just a few glimpse of my beautiful baby - the most beautiful girl in my whole world</p>
+    </section>
+
+    <section class="gallery-grid reveal-group" aria-label="Romantic photo gallery">
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-1.svg" data-caption="Your smile is my favorite view.">
+          <img src="../assets/images/photo-8.jpg" alt="Gallery placeholder one">
+        </button>
+        <figcaption>Your smile is my favorite view.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-2.svg" data-caption="Every second with you feels golden.">
+          <img src="../assets/images/photo-9.jpg" alt="Gallery placeholder two">
+        </button>
+        <figcaption>Every second with you feels golden.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-3.svg" data-caption="You make love feel effortless.">
+          <img src="../assets/images/photo-10.jpg" alt="Gallery placeholder three">
+        </button>
+        <figcaption>You make love feel effortless.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-4.svg" data-caption="My heart knows your name by rhythm.">
+          <img src="../assets/images/photo-7.jpg" alt="Gallery placeholder four">
+        </button>
+        <figcaption>My heart knows your name by your smile.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-5.svg" data-caption="With you, even silence is beautiful.">
+          <img src="../assets/images/photo-5.jpg" alt="Gallery placeholder five">
+        </button>
+        <figcaption>With you, even silence is beautiful.</figcaption>
+      </figure>
+      <figure class="gallery-item">
+        <button type="button" data-lightbox="../assets/images/gallery-6.svg" data-caption="Forever starts in moments like these.">
+          <img src="../assets/images/photo-6.jpg" alt="Gallery placeholder six">
+        </button>
+        <figcaption>Forever starts in moments like these.</figcaption>
+      </figure>
+    </section>
+
+    <div class="journey-actions reveal">
+      <button class="primary-btn" type="button" data-next="message.html">Read My Message</button>
+    </div>
+  </main>
+
+  <div class="lightbox" data-lightbox-modal aria-hidden="true">
+    <button class="lightbox-close" type="button" aria-label="Close gallery preview" data-lightbox-close>×</button>
+    <img src="../assets/images/photo-7.jpg" alt="Expanded gallery preview" data-lightbox-img>
+    <p data-lightbox-caption></p>
+  </div>
+
+  <script src="../js/script.js"></script>
+</body>
+</html>
